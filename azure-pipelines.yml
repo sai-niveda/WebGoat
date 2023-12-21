@@ -25,3 +25,4 @@ steps:
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'cx_apac_training'
+    additionalParams: --scan-types "sca,sast" --threshold "sast-high=10"
