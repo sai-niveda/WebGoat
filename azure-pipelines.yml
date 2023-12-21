@@ -21,6 +21,7 @@ steps:
 
 - task: Checkmarx AST@2
   inputs:
+    CheckmarxService: CxOne
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'cx_apac_training'
